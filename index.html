@@ -38,17 +38,25 @@
     height: auto;
   }
 
-  .message-text {
+  .link-list {
     margin: 0;
     position: fixed;
     top: 50dvh;
     left: 50%;
     transform: translate(-50%, -50%);
-    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6em;
     font-family: "Times New Roman", Times, serif;
-    color: #ffffff;
     font-size: clamp(1rem, 5vw, 2.5rem);
     text-align: center;
+  }
+
+  .link-list a {
+    color: #ffffff;
+    text-decoration: none;
+    white-space: nowrap;
   }
 </style>
 </head>
@@ -58,7 +66,12 @@
     <img class="top-logo" src="batt_logo.png" alt="batt logo">
   </a>
 
-  <p class="message-text">our message will be so important</p>
+  <nav class="link-list">
+    <a href="https://apple.com" target="_blank" rel="noopener noreferrer">apple</a>
+    <a href="https://spotify.com" target="_blank" rel="noopener noreferrer">spotify</a>
+    <a href="https://soundcloud.com" target="_blank" rel="noopener noreferrer">soundcloud</a>
+    <a href="https://bandcamp.com" target="_blank" rel="noopener noreferrer">bandcamp</a>
+  </nav>
 
   <a href="https://instagram.com/offajet" target="_blank" rel="noopener noreferrer">
     <img class="logo" src="logo.png" alt="off a jet logo">
